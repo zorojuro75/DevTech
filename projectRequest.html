@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pending Project Requests | Project Manager</title>
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap%27');
+    
+    
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Alkatra';
+        }
+    </style>
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="#"
+                        class="flex ml-2 md:mr-24 self-center text-2xl font-bold sm:text-2xl whitespace-nowrap dark:text-white">Dev<span
+                            class="text-red-700">Tech</span></a>
+                </div>
+
+                <div class="flex items-center">
+                    <a class="text-gray-600 hover:text-gray-800" href="index.html">Dashboard</a>
+                    <span class="text-gray-600 mx-3">/</span>
+                    <a class="text-blue-500 hover:text-blue-600 font-bold" href="#">Pending Project Requests</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="container mx-auto px-6 py-8">
+        <h1 class="text-3xl font-bold mb-8">Pending Project Requests</h1>
+
+        <!-- Filter -->
+        <div class="flex flex-wrap justify-between items-center mb-8">
+            <div class="relative mb-4 sm:mb-0">
+                <input type="text" id="search" name="search"
+                    class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-lg shadow-sm text-sm leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Search...">
+                <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                    <img src="image/icons/search.png" alt="" class="h-6 w-6" >
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Requests Table -->
+        <div class=" overflow-x-auto">
+            <table class="table-auto w-full border-collapse mb-8">
+                <thead>
+                    <tr class="border-b-2 border-gray-300">
+                        <th class="px-4 py-2 text-left">Request ID</th>
+                        <th class="px-4 py-2 text-left">Client Name</th>
+                        <th class="px-4 py-2 text-left">Requested System</th>
+                        <th class="px-4 py-2 text-left">Submission Date</th>
+                        <th class="px-4 py-2 text-left">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-300 hover:bg-gray-100">
+                        <td class="px-4 py-2">PR-001</td>
+                        <td class="px-4 py-2">Istiaq Ahmed</td>
+                        <td class="px-4 py-2">E-commerce Website</td>
+                        <td class="px-4 py-2">2022-03-25</td>
+                        <td class="px-4 py-2">Pending</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-gray-100">
+                        <td class="px-4 py-2">PR-002</td>
+                        <td class="px-4 py-2">Syed Niaz</td>
+                        <td class="px-4 py-2">CRM System</td>
+                        <td class="px-4 py-2">2022-03-24</td>
+                        <td class="px-4 py-2">Pending</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-gray-100">
+                        <td class="px-4 py-2">PR-003</td>
+                        <td class="px-4 py-2">Akib Raihan</td>
+                        <td class="px-4 py-2">Inventory Management System</td>
+                        <td class="px-4 py-2">2022-03-22</td>
+                        <td class="px-4 py-2">Pending</td>
+                    </tr>
+                    <tr class="border-b border-gray-300 hover:bg-gray-100">
+                        <td class="px-4 py-2">PR-004</td>
+                        <td class="px-4 py-2">Ayesha Binte Hasan</td>
+                        <td class="px-4 py-2">HR Management System</td>
+                        <td class="px-4 py-2">2022-03-20</td>
+                        <td class="px-4 py-2">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
