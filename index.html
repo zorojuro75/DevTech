@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,201 +8,231 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
-    
-<nav class="fixed top-0 z-50 w-full " style="background-color: #0D1B2A; color: #778DA9;">
-  <div class="px-3 py-3 lg:px-5 lg:pl-3">
-    <div class="flex items-center justify-between">
-      <div class="flex items-center justify-start">
-         <!-- expand button start -->
-         <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-            <span class="sr-only">Open sidebar</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-               <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
-            </svg>
-         </button>
-         <!-- expand button end -->
-        <a href="#" class="flex ml-2 md:mr-24">
-          <img src="/image/icons/devtech.png" class="h-12 mr-3" alt="FlowBite Logo" />
-          <span class="self-center text-xl font-bold sm:text-2xl whitespace-nowrap dark:text-white">DevTech</span>
-        </a>
-      </div>
-      <div class="flex items-center">
-          <div class="flex items-center ml-3">
-            <div>
-               
-              <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
-                <span class="sr-only">Open user menu</span>
-                <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
-              </button>
-              
-            </div>
-            <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
-              <div class="px-4 py-3" role="none">
-                <p class="text-sm text-gray-900 dark:text-white" role="none">
-                  Neil Sims
-                </p>
-                <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
-                  neil.sims@flowbite.com
-                </p>
-              </div>
-              <ul class="py-1" role="none">
-                <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Dashboard</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Settings</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Earnings</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</nav>
 
-<aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-gray-700 border-r border-gray-500 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar" style="background-color: #2a3d5f;">
-   <div class="h-full px-3 pb-4 overflow-y-auto ">
-      <ul class="space-y-2 font-medium">
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-               <img src="image/icons/data-report.png" alt="" class="flex-shrink-0 w-6 h-6">
-               <span class="ml-3">Dashboard</span>
-            </a>
-         </li>
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-               <img src="image/icons/employee.png" alt="" class="flex-shrink-0 w-6 h-6">
-               <span class="ml-3">Employee</span>
-            </a>
-         </li>
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-               <img src="image/icons/project-management.png" alt="" class="flex-shrink-0 w-6 h-6">
-               <span class="ml-3">Projects</span>
-            </a>
-         </li>
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-               <img src="image/icons/logout.png" alt="" class="flex-shrink-0 w-6 h-6">
-               <span class="ml-3">Log Out</span>
-            </a>
-         </li>
-         
-      </ul>
-   </div>
-</aside>
-
-<div class="p-4 sm:ml-64" style="background: #1B263B;">
-   <div class="p-4 rounded-lg dark:border-gray-700 mt-14">
-      <div class="grid grid-cols-3 gap-4 mb-4">
-         <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">Number of projects</p>
-         </div>
-         <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">Employees</p>
-         </div>
-         <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-         </div>
-      </div>
-      <!-- project progress bar start-->
-      <div class="flex items-center justify-center mb-4 rounded bg-gray-50 dark:bg-gray-800">
-         <p class="text-2xl text-gray-400 dark:text-gray-500"><!-- component -->
-            <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>    
-                
-            <main class="grid w-full min-h-screen text-gray-100 bg-gray-900 place-content-center">
-               <h1  class="text-center text-3xl font-semibold text-blue-100" style="background-color: #1B263B;">Project Status</h1>
-                <section x-data="skillDisplay"
-                    class="p-6 space-y-6 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0" style="background-color: #1B263B;">
-                    
-                    <div class="grid grid-cols-2 gap-6">
-                        <template x-for="skill in skills">
-                            <button x-text="skill.title"
-                                class="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700"
-                                :class="(currentSkill.title == skill.title) && 'font-bold ring-2 ring-gray-100'"
-                                @click="currentSkill = skill" style="background-color: #778DA9;color: #fff;"></button>
-                        </template>
-                    </div>
-            
-                    <div class="flex items-center justify-center" x-data="{ circumference: 2 * 22 / 7 * 120 }">
-                        <svg class="transform -rotate-90 w-72 h-72">
-                            <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
-                                class="text-gray-700" />
-            
-                            <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
-                                :stroke-dasharray="circumference"
-                                :stroke-dashoffset="circumference - currentSkill.percent / 100 * circumference"
-                                style="color: #c3d7f2;" />
+    <nav class="fixed top-0 z-50 w-full " style="background-color: #0D1B2A; color: #778DA9;">
+        <div class="px-3 py-3 lg:px-5 lg:pl-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start">
+                    <!-- expand button start -->
+                    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+                        aria-controls="logo-sidebar" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <span class="sr-only">Open sidebar</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" fill-rule="evenodd"
+                                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                            </path>
                         </svg>
-                        <span class="absolute text-xl" x-text="`${currentSkill.Phase}`" style="color: #c3d7f2;"></span>
-                </section>
-            </main>
-            
-            <script>
-                document.addEventListener('alpine:init', () => {
-                    Alpine.data('skillDisplay', () => ({
-                        skills: [{
+                    </button>
+                    <!-- expand button end -->
+                    <a href="#"
+                        class="flex ml-2 md:mr-24 self-center text-xl font-bold sm:text-2xl whitespace-nowrap dark:text-white">Dev<span
+                            class="text-red-700">Tech</span></a>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center ml-3">
+                        <div>
+
+                            <button type="button"
+                                class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                                aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                                <span class="sr-only">Open user menu</span>
+                                <img class="w-8 h-8 rounded-full"
+                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                    alt="user photo">
+                            </button>
+
+                        </div>
+                        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                            id="dropdown-user">
+                            <div class="px-4 py-3" role="none">
+                                <p class="text-sm text-gray-900 dark:text-white" role="none">
+                                    Neil Sims
+                                </p>
+                                <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
+                                    neil.sims@flowbite.com
+                                </p>
+                            </div>
+                            <ul class="py-1" role="none">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside id="logo-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-gray-700 border-r border-gray-500 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+        aria-label="Sidebar" style="background-color: #2a3d5f;">
+        <div class="h-full px-3 pb-4 overflow-y-auto ">
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <img src="image/icons/data-report.png" alt="" class="flex-shrink-0 w-6 h-6">
+                        <span class="ml-3">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <img src="image/icons/employee.png" alt="" class="flex-shrink-0 w-6 h-6">
+                        <span class="ml-3">Employee</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <img src="image/icons/project-management.png" alt="" class="flex-shrink-0 w-6 h-6">
+                        <span class="ml-3">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <img src="image/icons/logout.png" alt="" class="flex-shrink-0 w-6 h-6">
+                        <span class="ml-3">Log Out</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </aside>
+
+    <div class="p-4 sm:ml-64" style="background: #1B263B;">
+        <div class="p-4 rounded-lg dark:border-gray-700 mt-14">
+            <div class="grid grid-cols-3 gap-4 mb-4">
+                <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+                    <p class="text-2xl text-gray-400 dark:text-gray-500">Number of projects</p>
+                </div>
+                <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+                    <p class="text-2xl text-gray-400 dark:text-gray-500">Employees</p>
+                </div>
+                <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
+                    <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+                </div>
+            </div>
+            <!-- project progress bar start-->
+            <div class="flex items-center justify-center mb-4 rounded bg-gray-50 dark:bg-gray-800">
+                <p class="text-2xl text-gray-400 dark:text-gray-500"><!-- component -->
+                    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+
+                <main class="grid w-full min-h-screen text-gray-100 bg-gray-900 place-content-center">
+                    <h1 class="text-center text-3xl font-semibold text-blue-100" style="background-color: #1B263B;">
+                        Project Status</h1>
+                    <section x-data="skillDisplay"
+                        class="p-6 space-y-6 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0"
+                        style="background-color: #1B263B;">
+
+                        <div class="grid grid-cols-2 gap-6">
+                            <template x-for="skill in skills">
+                                <button x-text="skill.title"
+                                    class="px-4 py-2 text-xl text-gray-100 transition bg-blue-600 rounded-md h-14 w-44 hover:bg-blue-700"
+                                    :class="(currentSkill.title == skill.title) && 'font-bold ring-2 ring-gray-100'"
+                                    @click="currentSkill = skill"
+                                    style="background-color: #778DA9;color: #fff;"></button>
+                            </template>
+                        </div>
+
+                        <div class="flex items-center justify-center" x-data="{ circumference: 2 * 22 / 7 * 120 }">
+                            <svg class="transform -rotate-90 w-72 h-72">
+                                <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
+                                    fill="transparent" class="text-gray-700" />
+
+                                <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
+                                    fill="transparent" :stroke-dasharray="circumference"
+                                    :stroke-dashoffset="circumference - currentSkill.percent / 100 * circumference"
+                                    style="color: #c3d7f2;" />
+                            </svg>
+                            <span class="absolute text-xl" x-text="`${currentSkill.Phase}`"
+                                style="color: #c3d7f2;"></span>
+                    </section>
+                </main>
+
+                <script>
+                    document.addEventListener('alpine:init', () => {
+                        Alpine.data('skillDisplay', () => ({
+                            skills: [{
                                 'title': 'SPMS',
                                 'percent': '80',
-                                'Phase' : 'Developing',
+                                'Phase': 'Developing',
                             },
                             {
                                 'title': 'AlumnIUB',
                                 'percent': '60',
-                                'Phase' : 'Designing',
+                                'Phase': 'Designing',
                             },
                             {
                                 'title': 'CMS',
                                 'percent': '80',
-                                'Phase' : 'Developing',
+                                'Phase': 'Developing',
                             },
                             {
                                 'title': 'AQI',
                                 'percent': '5',
-                                'Phase' : 'System requirements',
+                                'Phase': 'System requirements',
                             },
                             {
                                 'title': 'LMS',
                                 'percent': '90',
-                                'Phase' : 'Beta',
+                                'Phase': 'Beta',
                             }, {
                                 'title': 'SES',
                                 'percent': '40',
-                                'Phase' : 'Analysis',
+                                'Phase': 'Analysis',
                             }, {
                                 'title': 'PHub',
                                 'percent': '100',
-                                'Phase' : 'Completed',
+                                'Phase': 'Completed',
                             }
-                        ],
-                        currentSkill: {
-                            'title': 'SPMS',
-                            'percent': '80',
-                            'Phase' : 'Developing',
-                        }
-                    }));
-                });
-            </script></p>
-      </div>
-      <!-- project progress bar end-->
-      <div class="grid grid-cols-2 gap-4 mb-4">
-         <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">Project requests</p>
-         </div>
-         <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">Employee status</p>
-         </div>
-      </div>
-   </div>
-</div>
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+                            ],
+                            currentSkill: {
+                                'title': 'SPMS',
+                                'percent': '80',
+                                'Phase': 'Developing',
+                            }
+                        }));
+                    });
+                </script>
+                </p>
+            </div>
+            <!-- project progress bar end-->
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+                    <p class="text-2xl text-gray-400 dark:text-gray-500">Project requests</p>
+                </div>
+                <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
+                    <p class="text-2xl text-gray-400 dark:text-gray-500">Employee status</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
+
 </html>
