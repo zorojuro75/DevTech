@@ -45,7 +45,7 @@
                                 aria-expanded="false" data-dropdown-toggle="dropdown-user">
                                 <span class="sr-only">Open user menu</span>
                                 <img class="w-8 h-8 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                    src="employee/employee7.png"
                                     alt="user photo">
                             </button>
 
@@ -54,10 +54,10 @@
                             id="dropdown-user">
                             <div class="px-4 py-3" role="none">
                                 <p class="text-sm text-gray-900 dark:text-white" role="none">
-                                    Neil Sims
+                                    Tamim Fatema
                                 </p>
                                 <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
-                                    neil.sims@flowbite.com
+                                    tamimfatema@devtech.com
                                 </p>
                             </div>
                             <ul class="py-1" role="none">
@@ -77,7 +77,7 @@
                                         role="menuitem">Earnings</a>
                                 </li>
                                 <li>
-                                    <a href="#"
+                                    <a href="signup.html"
                                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem">Sign out</a>
                                 </li>
@@ -93,7 +93,7 @@
     <!-- sidebar -->
     <aside id="logo-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
-        aria-label="Sidebar" ">
+        aria-label="Sidebar">
         <div class=" h-full px-3 pb-4 overflow-y-auto ">
             <ul class=" space-y-2 font-medium">
         <li>
@@ -104,28 +104,35 @@
             </a>
         </li>
         <li>
-            <a href=""
+            <a href="assigned.html"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                 <img src="image/icons/delegation.png" alt="" class="flex-shrink-0 w-6 h-6">
                 <span class="ml-3">Assigned Tasks</span>
             </a>
         </li>
         <li>
-            <a href="projectRequest.html"
+            <a href="chatroom.html"
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                 <img src="image/icons/chat.png" alt="" class="flex-shrink-0 w-6 h-6">
                 <span class="ml-3">chatroom</span>
             </a>
         </li>
         <li>
-            <a href="projectRequest.html"
-                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                <img src="image/icons/resource.png" alt="" class="flex-shrink-0 w-6 h-6">
-                <span class="ml-3">Project Resources</span>
-            </a>
+        <div class="relative">
+            <button class="flex items-center p-2 w-full text-gray-900 rounded-lg dark:text-white hover:bg-gray-100">
+              <img src="image/icons/resource.png" alt="" class="flex-shrink-0 w-6 h-6">
+              <span class="ml-3">Project Resources ▼</span>
+            </button>
+            <div class="absolute top-full left-0 z-10 w-full p-2 mt-1 bg-white border rounded-lg shadow-lg invisible opacity-0 transition-all duration-300 ease-out">
+              <a href="umldiagram.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100">
+                <img src="image\icons\uml.png" alt="" class="w-6 h-6 mr-3">UML Diagrams</a>
+              <a href="analytics.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"><img src="image\icons\monitor.png" alt="" class="w-6 h-6 mr-3">Analytics and Reports</a>
+              <a href="uploadfile.html" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100"><img src="image\icons\folder.png" alt="" class="w-6 h-6 mr-3">Files</a>
+            </div>
+        </div>
         </li>
         <li>
-            <a href="login.html"
+            <a href=""
                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                 <img src="image/icons/logout.png" alt="" class="flex-shrink-0 w-6 h-6">
                 <span class="ml-3">Log Out</span>
@@ -149,13 +156,15 @@
                     <div>
                       <h3 class="text-xl font-bold">Name: <span class="text-gray-400 font-normal">Tamim Fatema</span></h3>
                       <h3 class="text-xl font-bold">Position: <span class="text-gray-400 font-normal">Senior System Analyst</span></h3>
-                      <h3 class="text-xl font-bold">BG: <span class="text-gray-400 font-normal">O+</span></h3>
+                      <h3 class="text-xl font-bold">Email: <span class="text-gray-400 font-normal">tamimfatema@devtech.com</span></h3>
                     </div>
                   </header>
                   <div class="mt-4">
+                    <a href="profileedit.html">
                     <button class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">
                       Edit Profile
                     </button>
+                    </a>
                   </div>
                 </div>
 
@@ -237,7 +246,7 @@
                   <!-- feedback -->
 
                   <a href="#">
-                    <div class="relative block rounded border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8 md:h-50 bg-white">
+                    <div class="relative block rounded border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8 md:h-50 bg-white hover:bg-gray-300 transition duration-300">
                       <div class="md:flex items-center gap-4">
                         <img src="image/icons/response.png" alt="" width="50px">
                         <h3 class="text-3xl font-bold sm:text-4xl">Feedback</h3>
@@ -324,9 +333,10 @@
 
     <!--Skills END -->
             <!-- project progress bar end-->
+            <a href="assigned.html">
             <div class="grid grid-cols-2 gap-4 mb-4">
                 <!-- prject request  -->
-                <div class="relative block rounded  border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8 h-48 bg-white">
+                <div class="relative block rounded  border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8 h-48 bg-white hover:bg-gray-300 transition duration-300">
                     <div class="flex items-center gap-4">
                         <img src="image/icons/time.png" alt="" width="50px">
                         <h3 class="text-3xl font-bold sm:text-4xl">Upcoming deadline</h3>
@@ -337,14 +347,17 @@
                     </p>
 
                 </div>
+               </a>
                 <!-- on going projects  -->
-                <div class="relative block rounded  border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8 h-48 bg-white">
+                <a href="leave.html">
+                <div class="relative block rounded  border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8 h-48 bg-white hover:bg-gray-300 transition duration-300">
                     <div class="flex items-center gap-4">
                         <img src="image/icons/process.png" alt="" width="50px">
 
                         <h3 class="text-3xl font-bold sm:text-4xl">Apply for Leave</h3>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
