@@ -13,11 +13,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap%27');
 
-
         * {
-            margin: 0;
             padding: 0;
-            font-family: 'Alkatra', cursive;
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+
         }
     </style>
     <!-- navbar start -->
@@ -43,9 +43,7 @@
                                 class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
                                 aria-expanded="false" data-dropdown-toggle="dropdown-user">
                                 <span class="sr-only">Open user menu</span>
-                                <img class="w-8 h-8 rounded-full"
-                                    src="employee/employee1.png"
-                                    alt="user photo">
+                                <img class="w-8 h-8 rounded-full" src="employee/employee1.png" alt="user photo">
                             </button>
 
                         </div>
@@ -175,88 +173,74 @@
                 </a>
             </div>
             <!-- project progress bar start-->
-            <div
-                class="flex items-center justify-center mb-4 shadow-xl border-pink-600 rounded bg-gray-50 dark:bg-gray-800">
-                <p class="text-2xl text-gray-400 dark:text-gray-500"><!-- component -->
-                    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
 
-                <main class="grid w-full min-h-screen text-gray-100 place-content-center">
-                    <h1 class="p-6 text-center text-3xl font-semibold text-gray-900">
-                        Project Status</h1>
-                    <section x-data="skillDisplay"
-                        class="p-6 space-y-6 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0">
-                        <div class="grid grid-cols-2 gap-6">
-                            <template x-for="skill in skills">
-                                <button x-text="skill.title"
-                                    class="px-4 py-2 text-xl text-gray-100 transition bg-gray-400 rounded-md h-14 w-44 hover:bg-gray-600"
-                                    :class="(currentSkill.title == skill.title) && 'font-bold ring-2 ring-gray-100'"
-                                    @click="currentSkill = skill" style="color: #fff;"></button>
-                            </template>
+            <div class="grid grid-cols-2 gap-4 mb-4 shadow-xl border-pink-600 rounded bg-gray-50 dark:bg-gray-800 ">
+                <!-- component -->
+                <div class="flex flex-col h-full">
+                    <div class="relative flex flex-col rounded  bg-white p-3 w-full">
+                        <div class="mt-2 mb-8 w-full">
+                            <span class="px-2">Project Name : </span>
+                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                                class="text-gray-900 text-sm px-2 py-2.5 text-center inline-flex items-center"
+                                type="button" onclick=""> <span id="showdropdown"></span> <svg class="w-4 h-4 ml-2"
+                                    aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdown"
+                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul id="projectDrop" class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownDefaultButton">
+
+                                </ul>
+                            </div>
+
+                            <p id="projectoverview" class="mt-2 px-2 text-base text-gray-600 h-20">
+                                Project Overview:
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
+                            <p id="clientName" class="text-base text-gray-600"></p>
+
                         </div>
 
-                        <div class="flex items-center justify-center" x-data="{ circumference: 2 * 22 / 7 * 120 }">
-                            <svg class="transform -rotate-90 w-72 h-72">
-                                <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
-                                    fill="transparent" class="text-white border-pink-600" />
+                        <div
+                            class="flex flex-col items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
+                            <p id="date" class="text-base text-gray-600"></p>
 
-                                <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
-                                    fill="transparent" :stroke-dasharray="circumference"
-                                    :stroke-dashoffset="circumference - currentSkill.percent / 100 * circumference"
-                                    class="text-gray-600" />
-                            </svg>
-                            <span class="absolute text-xl text-gray-600" x-text="`${currentSkill.Phase}`"></span>
-                    </section>
-                </main>
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
+                            <p id="deadline" class="text-base text-gray-600"></p>
 
-                <script>
-                    document.addEventListener('alpine:init', () => {
-                        Alpine.data('skillDisplay', () => ({
-                            skills: [{
-                                'title': 'SPMS',
-                                'percent': '80',
-                                'Phase': 'Developing',
-                            },
-                            {
-                                'title': 'AlumnIUB',
-                                'percent': '60',
-                                'Phase': 'Designing',
-                            },
-                            {
-                                'title': 'CMS',
-                                'percent': '80',
-                                'Phase': 'Developing',
-                            },
-                            {
-                                'title': 'AQI',
-                                'percent': '5',
-                                'Phase': 'System requirements',
-                            },
-                            {
-                                'title': 'LMS',
-                                'percent': '90',
-                                'Phase': 'Beta',
-                            }, {
-                                'title': 'SES',
-                                'percent': '40',
-                                'Phase': 'Analysis',
-                            }, {
-                                'title': 'PHub',
-                                'percent': '100',
-                                'Phase': 'Completed',
-                            }
-                            ],
-                            currentSkill: {
-                                'title': 'SPMS',
-                                'percent': '80',
-                                'Phase': 'Developing',
-                            }
-                        }));
-                    });
-                </script>
-                </p>
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
+                            <p id="budget" class="text-base text-gray-600"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <table class="w-full border-collapse bg-white text-left text-sm text-gray-500">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th id="name" scope="col" class="px-6 py-4 font-medium text-gray-900">Name</th>
+                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Role</th>
+                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Status</th>
+                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Task status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody" class="divide-y divide-gray-100 border-t border-gray-100">
+                        
+                    </tbody>
+                </table>
             </div>
             <!-- project progress bar end-->
             <div class="grid grid-cols-2 gap-4 mb-4">
+
                 <!-- prject request  -->
                 <div class="relative block rounded  border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8 h-48 bg-white">
                     <div class="flex items-center gap-4">
@@ -287,6 +271,7 @@
     </div>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <script src="projectList.js"></script>
 </body>
 
 </html>
