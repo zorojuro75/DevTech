@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="chatroom.css" />
+    <title>chatroom</title>
+
+</head>
+<body>
+    <nav class="fixed top-0 z-50 w-full bg-gray-50">
+        <div class="px-3 py-3 lg:px-5 lg:pl-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start">
+                    <!-- expand button start -->
+                    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+                        aria-controls="logo-sidebar" type="button" class="p-2 rounded-lg md:hidden hover:bg-gray-200">
+                        <img src="image/icons/menu.png" alt="" class="w-8">
+                    </button>
+                    <!-- expand button end -->
+                    <a href="#"
+                        class="flex ml-2 md:mr-24 self-center text-2xl font-bold sm:text-2xl whitespace-nowrap dark:text-white">Dev<span
+                            class="text-red-700">Tech</span></a>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center ml-3">
+                        <div>
+
+                            <button type="button"
+                                class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                                aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                                <span class="sr-only">Open user menu</span>
+                                <img class="w-8 h-8 rounded-full"
+                                    src="employee/employee1.png"
+                                    alt="user photo">
+                            </button>
+
+                        </div>
+                        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                            id="dropdown-user">
+                            <div class="px-4 py-3" role="none">
+                                <p class="text-sm text-gray-800 dark:text-white" role="none">
+                                    Fahad Zaman Chowdhury
+                                </p>
+                                <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
+                                    chowdhury@devtech.com
+                                </p>
+                            </div>
+                            <ul class="py-1" role="none">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="profileedit.html" target="_blank"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Edit profile</a>
+                                </li>
+                                <li>
+                                    <a href="projects.html" target="_blank"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="leaveApplication.html" target="_blank"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Apply for leave</a>
+                                </li>
+                                <li>
+                                    <a href="signin.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav><!-- navbar end  -->
+
+    <br><br>
+<div class="container container-fluid vh-100 p-0 m-0 d-flex flex-column">
+<div class="row clearfix">
+    <div class="col-lg-12">
+        <div class="card chat-app">
+            <div id="plist" class="people-list">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-search fa-2x"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                <ul class="list-unstyled chat-list mt-2 mb-0">
+                    <li class="clearfix">
+                        <img src="employee/employee1.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Samnoon Ahmed</div>
+                            <div class="status"> <i class="fa fa-circle offline"></i> left 7 mins ago </div>                                            
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="employee/employee2.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Mohaiminul Islam Taky</div>
+                            <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="employee/employee3.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Rahat Hossain</div>
+                            <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                        </div>
+                    </li>                                    
+                    <li class="clearfix">
+                        <img src="employee/employee4.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Nafeesa S Kohon</div>
+                            <div class="status"> <i class="fa fa-circle offline"></i> left 10 hours ago </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="employee/employee5.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Rasheed Ishmam Priyo</div>
+                            <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="employee/employee6.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Al Asif</div>
+                            <div class="status"> <i class="fa fa-circle offline"></i> left 12 hours ago </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="employee/employee7.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Jaima Jahan Khan</div>
+                            <div class="status"> <i class="fa fa-circle offline"></i> left 10 minutes ago </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="employee/employee8.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Fahad Zaman Chowdhury</div>
+                            <div class="status"> <i class="fa fa-circle offline"></i> offline since Oct 28 </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="employee/employee9.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Akib Raihan</div>
+                            <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="employee/employee10.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Sayed Al Banna</div>
+                            <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                        </div>
+                    </li>
+                    <li class="clearfix active">
+                        <img src="employee/employee12.png" alt="avatar">
+                        <div class="about">
+                            <div class="name">Ayatullah Arefin</div>
+                            <div class="status"> <i class="fa fa-circle online"></i> online </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="chat">
+                <div class="chat-header clearfix">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
+                                <img src="employee/employee12.png" alt="avatar">
+                            </a>
+                            <div class="chat-about">
+                                <h6 class="m-b-0">Ayatullah Arefin</h6>
+                                <small>Active</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 hidden-sm text-right float-right">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-history">
+                    <ul class="m-b-0">
+                        <li class="clearfix">
+                            <div class="message other-message float-right"> Hi Ayat, how are you? How is the project coming along? </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="message-data">
+                                <span class="message-data-time">10:12 AM, Today</span>
+                            </div>
+                            <div class="message my-message">Are we meeting today?</div>                                    
+                        </li>                               
+                        <li class="clearfix">
+                            <div class="message-data">
+                                <span class="message-data-time">10:15 AM, Today</span>
+                            </div>
+                            <div class="message my-message">Project has been already finished and I have results to show you.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat-message clearfix">
+                    <div class="input-group mb-0">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-send fa-2x"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Enter text here...">                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
