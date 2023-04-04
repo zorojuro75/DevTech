@@ -18,6 +18,13 @@ h1{
     font-size: xx-large;
 }
 
+.hoverr:hover{
+    /* background-color: #E3F2FD; */
+    background: #E3F2FD;
+    -webkit-transition: background 2s;
+    animation: background 2s  ;
+}
+
 .photo{
     width: 30px;
     height: 30px;

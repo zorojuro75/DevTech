@@ -32,9 +32,8 @@
 }
 #skill .skill-col .skill-item .skill-name-per h2{
     color: #23313c;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-weight: 700;
-    font-style: italic;
     font-size: 19px;
 }
 #skill .skill-col .skill-item .skill-outer-bar{
