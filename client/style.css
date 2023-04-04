@@ -14,20 +14,13 @@ html{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 35px;
     font-weight: 700;
-    color: white;
+    color:aquamarine;
     text-shadow: 0 0 20px rgba(0,0,0,0.537);
     text-transform: uppercase;
 }
-.sub-title span{
-    color:aquamarine;
-}
-
-
 
 
 /* Project Section */
-
-
 #project{
     background-color:#f8f8f8;
     padding: 5% 5%;
@@ -112,38 +105,9 @@ html{
     }
 }
 
-/* Contact ME */
-
-#contact{
-    background-color:#9e68e0;
-    padding: 5% 5%;
-    position: relative;
-}
-
-#contact p{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 0.6px;
-    text-align: center;
-    margin-top: 15px;
-}
 
 
 
 
-.icons{
-    text-align: center;
-    width: 100%;
-}
 
-.icons i{
-    padding: 2% 2%;
-}
 
-@media only screen and (max-width: 760px){
-    .icons i{
-        display: block;
-    }
-}
