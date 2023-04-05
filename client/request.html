@@ -107,7 +107,7 @@
             <div class="inputgroup">
               <input class="uplo" type="file" accept="image/*">
             </div>
-            <button type="submit" class="inputgroupa">Request <i class="fa-solid fa-paper-plane"></i></button>
+            <button type="submit" onclick="submitted()" class="inputgroupa">Request <i class="fa-solid fa-paper-plane"></i></button>
         </form>
     </div>
 </div>
@@ -191,6 +191,11 @@
     </div>
   </div>
 </footer>
+    <script>
+  function submitted(){
+    alert("Project Request has been submitted successfully");
+  }
+</script>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </body>
