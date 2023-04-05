@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(../Pictures/login.jpg);
+    background-image: url(Pictures/login.jpg);
     background-position: center;
     background-size: contain;
     min-height: 100vh;
